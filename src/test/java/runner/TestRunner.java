@@ -14,6 +14,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/java/features",
         glue = "stepDef",
+        plugin = {"json:target/cucumber-report.json", "pretty", "html:target/test-report.html"},
         publish = true,
         monochrome = true
 )
