@@ -83,6 +83,9 @@ public class Users extends BaseBuilder{
     public void verify_users_data_for_user_id() {
         jsonSchemaValidator(response,reader.getValueFromConfig("user.info.by.user.id.valid.schema"));
         System.out.println("build trigger");
+        System.out.println("**********************");
         Assert.assertTrue(true);
     }
+
+
 }
